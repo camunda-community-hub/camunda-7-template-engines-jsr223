@@ -1,0 +1,5 @@
+# INSTALLATION GUIDE
+
+1.) Copy the content of the lib folder into your Websphere Application Server lib/ext folder (${websphere-server}/lib/ext)
+
+2.) Restart server

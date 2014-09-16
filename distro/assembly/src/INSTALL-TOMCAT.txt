@@ -1,0 +1,5 @@
+# INSTALLATION GUIDE
+
+1.) Copy the content of the lib folder into your Tomcat lib folder (${tomcat-server}/lib)
+
+2.) Restart server

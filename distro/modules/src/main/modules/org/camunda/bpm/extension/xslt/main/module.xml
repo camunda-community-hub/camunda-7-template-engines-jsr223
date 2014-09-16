@@ -1,0 +1,11 @@
+<module xmlns="urn:jboss:module:1.0" name="org.camunda.bpm.extension.xslt">
+  <resources>
+    <resource-root path="camunda-bpm-xslt-@version.camunda.xslt@.jar" />
+  </resources>
+
+  <dependencies>
+    <module name="javax.api" />
+    <module name="net.sf.saxon" />
+    <module name="org.camunda.commons.camunda-commons-utils" />
+  </dependencies>
+</module>

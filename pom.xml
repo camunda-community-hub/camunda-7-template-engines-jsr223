@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.camunda</groupId>
+    <artifactId>camunda-release-parent</artifactId>
+    <version>2.2</version>
+    <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
+    <relativePath />
+  </parent>
+
+  <groupId>org.camunda.bpm.extension.xslt</groupId>
+  <artifactId>camunda-bpm-xslt-parent</artifactId>
+  <name>Camunda XSLT Extension</name>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <properties>
+    <version.saxon>9.5.1-5</version.saxon>
+    <version.camunda.commons.util>1.0.4</version.camunda.commons.util>
+
+    <skip.central.release>true</skip.central.release>
+    <nexus.snapshot.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee-snapshots</nexus.snapshot.repository>
+    <nexus.release.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee</nexus.release.repository>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <dependency>
+        <groupId>org.camunda.bpm.extension.xslt</groupId>
+        <artifactId>camunda-bpm-xslt</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.camunda.commons</groupId>
+        <artifactId>camunda-commons-utils</artifactId>
+        <version>${version.camunda.commons.util}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>net.sf.saxon</groupId>
+        <artifactId>Saxon-HE</artifactId>
+        <version>${version.saxon}</version>
+      </dependency>
+
+      <!-- TEST DEPENDENCIES -->
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.11</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>1.6.0</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <profiles>
+    <profile>
+      <id>distro</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <!-- the extension source -->
+        <module>xslt-extension</module>
+
+        <!-- application server assemblies -->
+        <module>distro</module>
+      </modules>
+    </profile>
+  </profiles>
+
+  <scm>
+    <url>https://github.com/camunda/camunda-bpm-xslt-ee</url>
+    <connection>scm:git:git@github.com:camunda/camunda-bpm-xslt-ee.git</connection>
+    <developerConnection>scm:git:git@github.com:camunda/camunda-bpm-xslt-ee.git</developerConnection>
+    <tag>1.0.0</tag>
+  </scm>
+</project>

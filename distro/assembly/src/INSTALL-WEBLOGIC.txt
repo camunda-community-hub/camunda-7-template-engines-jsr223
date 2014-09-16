@@ -1,0 +1,5 @@
+# INSTALLATION GUIDE
+
+1.) Copy the content of the lib folder into your Weblogic Application Server lib folder (${weblogic-server}/domains/${your-domain}/lib)
+
+2.) Restart server

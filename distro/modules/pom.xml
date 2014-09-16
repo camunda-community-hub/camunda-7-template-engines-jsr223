@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.camunda.bpm.extension.xslt.distro</groupId>
+    <artifactId>xslt-distro-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../</relativePath>
+  </parent>
+
+  <artifactId>xslt-distro-modules</artifactId>
+  <name>Distribution Package - Modules</name>
+  <packaging>pom</packaging>
+
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <tasks>
+                <mkdir dir="target/modules" />
+
+                <copy todir="target/modules" flatten="false">
+                  <fileset dir="src/main/modules" />
+                </copy>
+
+                <copy file="../../xslt-extension/target/camunda-bpm-xslt-${project.parent.version}.jar" todir="target/modules/org/camunda/bpm/extension/xslt/main" flatten="false" />
+
+                <copy file="../../xslt-extension/target/Saxon-HE-${version.saxon}.jar" todir="target/modules/net/sf/saxon/main" flatten="false" />
+
+                <replace dir="target/modules" token="@version.camunda.xslt@" value="${project.parent.version}">
+                  <include name="**/module.xml" />
+                </replace>
+
+                <replace dir="target/modules" token="@version.saxon@" value="${version.saxon}">
+                  <include name="**/module.xml" />
+                </replace>
+              </tasks>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.5</version>
+        <configuration>
+          <classesDirectory>${project.build.directory}/modules/</classesDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

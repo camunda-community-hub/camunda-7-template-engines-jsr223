@@ -1,0 +1,9 @@
+<module xmlns="urn:jboss:module:1.0" name="net.sf.saxon">
+  <resources>
+    <resource-root path="Saxon-HE-@version.saxon@.jar" />
+  </resources>
+
+  <dependencies>
+    <module name="javax.api" />
+  </dependencies>
+</module>
