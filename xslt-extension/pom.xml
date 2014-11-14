@@ -4,7 +4,7 @@
 
   <parent>
     <groupId>org.camunda.bpm.extension.xslt</groupId>
-    <artifactId>camunda-bpm-xslt-parent</artifactId>
+    <artifactId>camunda-bpm-xslt-root</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>

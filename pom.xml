@@ -11,8 +11,8 @@
   </parent>
 
   <groupId>org.camunda.bpm.extension.xslt</groupId>
-  <artifactId>camunda-bpm-xslt-parent</artifactId>
-  <name>Camunda XSLT Extension</name>
+  <artifactId>camunda-bpm-xslt-root</artifactId>
+  <name>Camunda XSLT Extension - root</name>
   <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
