@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.camunda</groupId>
     <artifactId>camunda-release-parent</artifactId>
-    <version>2.2</version>
+    <version>2.5</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
   </parent>
@@ -18,7 +18,7 @@
 
   <properties>
     <version.saxon>9.5.1-5</version.saxon>
-    <version.camunda.commons.util>1.0.4</version.camunda.commons.util>
+    <version.camunda.commons>1.0.5</version.camunda.commons>
 
     <skip.central.release>true</skip.central.release>
     <nexus.snapshot.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee-snapshots</nexus.snapshot.repository>
@@ -36,8 +36,10 @@
 
       <dependency>
         <groupId>org.camunda.commons</groupId>
-        <artifactId>camunda-commons-utils</artifactId>
-        <version>${version.camunda.commons.util}</version>
+        <artifactId>camunda-commons-bom</artifactId>
+        <version>${version.camunda.commons}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
 
       <dependency>
