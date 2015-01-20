@@ -91,6 +91,10 @@ public class XsltScriptEngine extends AbstractScriptEngine implements Compilable
       // set source xml
       String source = (String) bindings.get("camunda_source");
 
+      if(source == null) {
+        throw new IllegalArgumentException("variable 'camunda_source' is not set. The XSLT transformation requires variable 'camunda_source' to be set.");
+      }
+
       // this will prevent that camunda source will be mapped into the stylesheet template
       bindings.remove("camunda_source");
 

@@ -46,7 +46,11 @@ public class XsltScriptEngineTest {
   @After
   public void checkResult() throws ScriptException {
     if(xsltStylesheet != null) {
-      assertThat(evaluate(xsltStylesheet)).isEqualTo(expected);
+      try {
+        assertThat(evaluate(xsltStylesheet)).isEqualTo(expected);
+      } catch(IllegalArgumentException e) {
+        assertThat(e.getMessage()).contains("The XSLT transformation requires variable 'camunda_source' to be set.");
+      }
     }
   }
 
@@ -64,6 +68,13 @@ public class XsltScriptEngineTest {
   public void testConverting() {
     bindings.put("world", "world");
     bindings.put("camunda_source", XsltTestConstants.EXAMPLE_XML);
+    expected = XsltTestConstants.EXAMPLE_XHTML;
+    xsltStylesheet = XsltTestConstants.EXAMPLE_XSL;
+  }
+
+  @Test
+  public void testFailingConverting() {
+    bindings.put("world", "world");
     expected = XsltTestConstants.EXAMPLE_XHTML;
     xsltStylesheet = XsltTestConstants.EXAMPLE_XSL;
   }
