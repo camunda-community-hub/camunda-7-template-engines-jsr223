@@ -23,6 +23,7 @@
     <skip.central.release>true</skip.central.release>
     <nexus.snapshot.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee-snapshots</nexus.snapshot.repository>
     <nexus.release.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee</nexus.release.repository>
+    <license.includeTransitiveDependencies>false</license.includeTransitiveDependencies>
   </properties>
 
   <dependencyManagement>
@@ -80,6 +81,20 @@
       </modules>
     </profile>
   </profiles>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>license-maven-plugin</artifactId>
+        <version>1.14</version>
+        <configuration>
+          <acceptPomPackaging>true</acceptPomPackaging>
+          <excludedScopes>test</excludedScopes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
   <scm>
     <url>https://github.com/camunda/camunda-bpm-xslt-ee</url>
