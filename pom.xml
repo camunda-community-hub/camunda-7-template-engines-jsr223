@@ -13,7 +13,7 @@
   <groupId>org.camunda.bpm.extension.xslt</groupId>
   <artifactId>camunda-bpm-xslt-root</artifactId>
   <name>Camunda XSLT Extension - root</name>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.1.0</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -100,6 +100,6 @@
     <url>https://github.com/camunda/camunda-bpm-xslt-ee</url>
     <connection>scm:git:git@github.com:camunda/camunda-bpm-xslt-ee.git</connection>
     <developerConnection>scm:git:git@github.com:camunda/camunda-bpm-xslt-ee.git</developerConnection>
-    <tag>1.0.0</tag>
+    <tag>1.1.0</tag>
   </scm>
 </project>
