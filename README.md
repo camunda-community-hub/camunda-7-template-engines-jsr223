@@ -8,3 +8,6 @@
 
 `mvn clean install`
 
+## License
+
+License: This repository contains files subject to a commercial license.
