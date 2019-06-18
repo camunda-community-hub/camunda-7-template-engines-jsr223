@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.camunda</groupId>
     <artifactId>camunda-release-parent</artifactId>
-    <version>3.4</version>
+    <version>3.5</version>
     <!-- do not remove empty tag - http://jira.codehaus.org/browse/MNG-4687 -->
     <relativePath />
   </parent>
@@ -25,6 +25,10 @@
     <nexus.snapshot.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee-snapshots</nexus.snapshot.repository>
     <nexus.release.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee</nexus.release.repository>
     <license.includeTransitiveDependencies>false</license.includeTransitiveDependencies>
+    <license.inlineHeader>
+Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
+under one or more contributor license agreements. Licensed under a commercial license.
+You may not use this file except in compliance with the commercial license.</license.inlineHeader>
   </properties>
 
   <dependencyManagement>
@@ -94,20 +98,6 @@
           <excludedScopes>test</excludedScopes>
         </configuration>
       </plugin>
-
-      <plugin>
-        <groupId>com.mycila</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <version>${plugin.version.license}</version>
-        <configuration>
-          <inlineHeader combine.self="override">
-Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
-under one or more contributor license agreements. Licensed under a commercial license.
-You may not use this file except in compliance with the commercial license.
-          </inlineHeader>
-        </configuration>
-      </plugin>
-
     </plugins>
   </build>
 
