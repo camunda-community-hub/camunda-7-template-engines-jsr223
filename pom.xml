@@ -19,7 +19,7 @@
 
   <properties>
     <version.saxon>9.5.1-5</version.saxon>
-    <version.camunda.commons>1.6.0</version.camunda.commons>
+    <version.camunda.commons>1.8.0</version.camunda.commons>
 
     <skip.central.release>true</skip.central.release>
     <nexus.snapshot.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee-snapshots</nexus.snapshot.repository>
