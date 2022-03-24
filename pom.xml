@@ -22,8 +22,8 @@
     <version.camunda.commons>1.8.0</version.camunda.commons>
 
     <skip.central.release>true</skip.central.release>
-    <nexus.snapshot.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee-snapshots</nexus.snapshot.repository>
-    <nexus.release.repository>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee</nexus.release.repository>
+    <nexus.snapshot.repository>https://artifacts.camunda.com/artifactory/camunda-bpm-ee-snapshots/</nexus.snapshot.repository>
+    <nexus.release.repository>https://artifacts.camunda.com/artifactory/camunda-bpm-ee/</nexus.release.repository>
     <license.includeTransitiveDependencies>false</license.includeTransitiveDependencies>
     <license.inlineHeader>
 Copyright Camunda Services GmbH and/or licensed to Camunda Services GmbH
