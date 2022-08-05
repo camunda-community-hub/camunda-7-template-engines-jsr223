@@ -1,3 +1,3 @@
 @Library("camunda-ci") _
-buildMavenAndDeployToNexusEE([jdk:7, licenseCheck:true])
+buildMavenAndDeployToNexusEE([jdk:8, licenseCheck:true])
 
