@@ -26,8 +26,8 @@
     <module>bom</module>
     <module>velocity</module>
     <module>xquery-saxon</module>
-    <module>xslt-extension</module>
-    <module>distro</module>
+    <module>xslt-saxon</module>
+    <module>xslt-distro</module>
   </modules>
 
   <dependencyManagement>

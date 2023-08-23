@@ -34,9 +34,9 @@
                   <fileset dir="src/main/modules" />
                 </copy>
 
-                <copy file="../../xslt-extension/target/camunda-7-template-engines-xslt-${project.parent.version}.jar" todir="target/modules/org/camunda/community/template/engines/main" flatten="false" />
+                <copy file="../../xslt-saxon/target/camunda-7-template-engines-xslt-${project.parent.version}.jar" todir="target/modules/org/camunda/community/template/engines/main" flatten="false" />
 
-                <copy file="../../xslt-extension/target/Saxon-HE-${version.saxon}.jar" todir="target/modules/net/sf/saxon/main" flatten="false" />
+                <copy file="../../xslt-saxon/target/Saxon-HE-${version.saxon}.jar" todir="target/modules/net/sf/saxon/main" flatten="false" />
 
                 <replace dir="target/modules" token="@version.camunda.xslt@" value="${project.parent.version}">
                   <include name="**/module.xml" />
