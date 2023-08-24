@@ -1,0 +1,13 @@
+# INSTALLATION GUIDE
+
+1.) Copy the content of the modules folder into your WildFly modules folder (${wildfly-server}/modules)
+
+2.) Add the following entry to the dependencies section of the camunda-engine module.xml
+
+```
+  <module name="org.camunda.bpm.extension.xslt" services="import" />
+```
+
+The module.xml file could be found in `${wildfly-server}/modules/org/camunda/bpm/camunda-engine/main`.
+
+3.) Restart server

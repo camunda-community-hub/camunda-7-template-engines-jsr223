@@ -3,29 +3,30 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.camunda.bpm.extension.xslt.distro</groupId>
-    <artifactId>xslt-distro-root</artifactId>
-    <version>1.3.0-SNAPSHOT</version>
+    <groupId>org.camunda.community.template.engines</groupId>
+    <artifactId>camunda-7-template-engines-xslt-distro</artifactId>
+    <version>2.2.0-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>
 
-  <artifactId>xslt-distro</artifactId>
-  <name>Distribution Package - Assembly</name>
+  <artifactId>camunda-7-template-engines-xslt-distro-assembly</artifactId>
+  <name>camunda 7 template engines jsr223 - xslt-saxon - distro - assembly</name>
   <packaging>pom</packaging>
 
   <!-- dependencies to build after modules -->
   <dependencies>
     <dependency>
-      <groupId>org.camunda.bpm.extension.xslt.distro</groupId>
-      <artifactId>xslt-distro-modules</artifactId>
+      <groupId>org.camunda.community.template.engines</groupId>
+      <artifactId>camunda-7-template-engines-xslt-distro-modules</artifactId>
       <version>${project.parent.version}</version>
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>org.camunda.bpm.extension.xslt</groupId>
-      <artifactId>camunda-bpm-xslt</artifactId>
+      <groupId>org.camunda.community.template.engines</groupId>
+      <artifactId>camunda-7-template-engines-xslt</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>
@@ -50,7 +51,7 @@
               <descriptors>
                 <descriptor>assembly.xml</descriptor>
               </descriptors>
-              <finalName>camunda-bpm-ee-xslt-extension-${project.parent.version}</finalName>
+              <finalName>camunda-7-template-engines-xslt-${project.parent.version}</finalName>
               <attach>true</attach>
               <appendAssemblyId>false</appendAssemblyId>
               <outputDirectory>target/</outputDirectory>

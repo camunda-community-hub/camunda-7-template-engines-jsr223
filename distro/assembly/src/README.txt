@@ -3,7 +3,7 @@
 The XSLT Extension is a JSR223 compatible script engine extension which allows to transform data via XSLT.
 See our user guide for examples how to use this extension (http://docs.camunda.org/latest/guides/user-guide/#process-engine-scripting).
 
-An code driven example can also be found in our examples repository (https://github.com/camunda/camunda-bpm-examples).
+A code driven example can also be found in our examples' repository (https://github.com/camunda/camunda-bpm-examples).
 
 Version: ${project.parent.version}
 Usable with: Camunda Platform 7.2.0 and higher
@@ -17,29 +17,21 @@ lib/
   XSLT-extension.
 
 modules/
-  This directory contains all libraries in JBoss AS7/Wildfly module format.
+  This directory contains all libraries in JBoss EAP/Wildfly module format.
 
 =============================
 
 # INSTALLATION GUIDE
 
-## JBoss AS 7 / JBoss Wildfly
+## JBoss EAP / WildFly
 
-see INSTALL-JBOSS.txt
+see INSTALL-WILDFLY.txt
 
 ## Tomcat
 
 see INSTALL-TOMCAT.txt
 
-## Glassfish 3
-
-see INSTALL-GLASSFISH.txt
-
-## Websphere 8
-
-see INSTALL-WEBSPHERE.txt
-
-## Weblogic 12
+## WebLogic
 
 see INSTALL-WEBLOGIC.txt
 

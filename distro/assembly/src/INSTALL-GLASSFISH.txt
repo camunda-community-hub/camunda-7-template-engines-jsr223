@@ -1,5 +1,0 @@
-# INSTALLATION GUIDE
-
-1.) Copy the content of the lib folder into your Glassfish 3 lib folder (${glassfish3-server}/glassfish3/lib)
-
-2.) Restart server

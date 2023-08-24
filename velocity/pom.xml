@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>camunda-template-engines-root</artifactId>
-    <groupId>org.camunda.template-engines</groupId>
+    <groupId>org.camunda.community.template.engines</groupId>
+    <artifactId>camunda-7-template-engines-jsr223-root</artifactId>
     <version>2.2.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>camunda-template-engines-velocity</artifactId>
-  <name>camunda template engines jsr223 - velocity</name>
+  <artifactId>camunda-7-template-engines-velocity</artifactId>
+  <name>camunda 7 template engines jsr223 - velocity</name>
 
   <dependencies>
     <dependency>
