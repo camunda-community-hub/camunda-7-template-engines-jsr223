@@ -8,7 +8,7 @@
     <relativePath />
   </parent>
 
-  <groupId>org.camunda.community.template.engines</groupId>
+  <groupId>org.camunda.community.template.engine</groupId>
   <artifactId>camunda-7-template-engines-bom</artifactId>
   <version>2.2.0-SNAPSHOT</version>
   <name>camunda 7 template engines jsr223 - bom</name>
