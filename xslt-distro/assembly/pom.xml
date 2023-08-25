@@ -4,12 +4,12 @@
 
   <parent>
     <groupId>org.camunda.community.template.engines</groupId>
-    <artifactId>camunda-7-template-engines-xslt-distro</artifactId>
+    <artifactId>camunda-7-template-engine-xslt-distro</artifactId>
     <version>2.2.0-SNAPSHOT</version>
     <relativePath>../</relativePath>
   </parent>
 
-  <artifactId>camunda-7-template-engines-xslt-distro-assembly</artifactId>
+  <artifactId>camunda-7-template-engine-xslt-distro-assembly</artifactId>
   <name>camunda 7 template engines jsr223 - xslt-saxon - distro - assembly</name>
   <packaging>pom</packaging>
 
@@ -17,7 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>org.camunda.community.template.engines</groupId>
-      <artifactId>camunda-7-template-engines-xslt-distro-modules</artifactId>
+      <artifactId>camunda-7-template-engine-xslt-distro-modules</artifactId>
       <version>${project.parent.version}</version>
       <type>pom</type>
       <scope>provided</scope>
@@ -25,7 +25,7 @@
 
     <dependency>
       <groupId>org.camunda.community.template.engines</groupId>
-      <artifactId>camunda-7-template-engines-xslt</artifactId>
+      <artifactId>camunda-7-template-engine-xslt</artifactId>
       <version>${project.version}</version>
     </dependency>
 
@@ -51,7 +51,7 @@
               <descriptors>
                 <descriptor>assembly.xml</descriptor>
               </descriptors>
-              <finalName>camunda-7-template-engines-xslt-${project.parent.version}</finalName>
+              <finalName>camunda-7-template-engine-xslt-${project.parent.version}</finalName>
               <attach>true</attach>
               <appendAssemblyId>false</appendAssemblyId>
               <outputDirectory>target/</outputDirectory>

@@ -8,7 +8,7 @@
     <version>2.2.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>camunda-7-template-engines-xquery-saxon</artifactId>
+  <artifactId>camunda-7-template-engine-xquery</artifactId>
   <name>camunda 7 template engines jsr223 - xquery-saxon</name>
 
   <dependencies>

@@ -19,25 +19,19 @@
 
       <dependency>
         <groupId>org.camunda.community.template.engine</groupId>
-        <artifactId>camunda-7-template-engines-freemarker</artifactId>
+        <artifactId>camunda-7-template-engine-velocity</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.camunda.community.template.engine</groupId>
-        <artifactId>camunda-7-template-engines-velocity</artifactId>
+        <artifactId>camunda-7-template-engine-xquery</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.camunda.community.template.engine</groupId>
-        <artifactId>camunda-7-template-engines-xquery</artifactId>
-        <version>${project.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.camunda.community.template.engine</groupId>
-        <artifactId>camunda-7-template-engines-xslt</artifactId>
+        <artifactId>camunda-7-template-engine-xslt</artifactId>
         <version>${project.version}</version>
       </dependency>
     </dependencies>

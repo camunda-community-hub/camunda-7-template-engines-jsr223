@@ -8,7 +8,7 @@
     <version>2.2.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>camunda-7-template-engines-xslt-distro</artifactId>
+  <artifactId>camunda-7-template-engine-xslt-distro</artifactId>
   <name>camunda 7 template engines jsr223 - xslt-saxon - distro</name>
   <packaging>pom</packaging>
 
