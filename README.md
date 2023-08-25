@@ -1,3 +1,6 @@
+[![Community Extension](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/camunda-community-hub/community)
+[![](https://img.shields.io/badge/Lifecycle-Incubating-blue)](https://github.com/Camunda-Community-Hub/community/blob/main/extension-lifecycle.md#incubating-) ![Compatible with: Camunda Platform 7](https://img.shields.io/badge/Compatible%20with-Camunda%20Platform%207-26d07c) ![](https://img.shields.io/badge/Maintainer%20Wanted-This%20extension%20is%20in%20search%20of%20a%20Maintainer-ff69b4)
+
 camunda-7-template-engines-jsr223
 ===============================
 
@@ -7,7 +10,7 @@ camunda-7-template-engines-jsr223
   <a href="LICENSE">License</a>
 </p>
 
-Modules which contain wrappers of Java template engines as
+Modules that contain wrappers of Java template engines as
 [JSR 223](https://www.jcp.org/en/jsr/detail?id=223) compatible
 [script engines](http://docs.oracle.com/javase/7/docs/api/javax/script/ScriptEngine.html).
 Therefore, they can be used in Camunda Automation Platform 7 as scripting languages.
@@ -15,8 +18,8 @@ Therefore, they can be used in Camunda Automation Platform 7 as scripting langua
 ## Template Engines
 
 * Velocity 2.3
-* xQuery Saxon 9.6
+* XQuery Saxon 9.6
 * XSLT Saxon 9.6
 
 ## License
-The source files in this repository are made available under the [Apache License Version 2.0](./LICENSE).
+This repository's source files are available under the [Apache License Version 2.0](./LICENSE).
