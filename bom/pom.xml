@@ -10,7 +10,7 @@
 
   <groupId>org.camunda.community.template.engine</groupId>
   <artifactId>camunda-7-template-engines-bom</artifactId>
-  <version>2.2.2-SNAPSHOT</version>
+  <version>2.2.3-SNAPSHOT</version>
   <name>camunda 7 template engines jsr223 - bom</name>
   <packaging>pom</packaging>
 
@@ -20,19 +20,19 @@
       <dependency>
         <groupId>org.camunda.community.template.engine</groupId>
         <artifactId>camunda-7-template-engine-velocity</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.camunda.community.template.engine</groupId>
         <artifactId>camunda-7-template-engine-xquery</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.1-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.camunda.community.template.engine</groupId>
         <artifactId>camunda-7-template-engine-xslt</artifactId>
-        <version>2.2.0</version>
+        <version>2.2.1-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
