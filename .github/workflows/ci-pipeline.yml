@@ -50,6 +50,7 @@ jobs:
         name: Deploy SNAPSHOT / Release
         uses: camunda-community-hub/community-action-maven-release@v1
         with:
+          artifacts-pattern: ""
           maven-auto-release-after-close: true 
           release-version: ${{ github.event.release.tag_name }}
           release-profile: community-action-maven-release
