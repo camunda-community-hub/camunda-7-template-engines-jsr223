@@ -19,7 +19,7 @@
   <properties>
     <license.includeTransitiveDependencies>false</license.includeTransitiveDependencies>
     <version.java>11</version.java>
-    <version.saxon>9.6.0-6</version.saxon>
+    <version.saxon>12.3</version.saxon>
   </properties>
 
   <modules>
