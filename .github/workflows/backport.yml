@@ -21,4 +21,4 @@ jobs:
       )
     steps:
       - uses: actions/checkout@v3
-      - uses: korthout/backport-action@v1
+      - uses: korthout/backport-action@v2
